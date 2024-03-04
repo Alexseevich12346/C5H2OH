@@ -21,8 +21,8 @@ const AuthPage = () => {
             >
                 <Flex
                 boxShadow={'rgba(0,0,0, 0.24) 0px 3px 8px'}
-                width={'20em'}
-                height={'35vh'}
+                width={'22em'}
+                height={'45vh'}
                 flexWrap={'wrap'}
                 justify={'center'}
                 >

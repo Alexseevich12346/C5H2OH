@@ -1,7 +1,7 @@
 import '../App.css';
-import { Text, Box, Flex, Grid, Input,Heading, Button } from '@chakra-ui/react';
+import { Text, Box, Flex, Grid, Input,Heading, Button} from '@chakra-ui/react';
 import { Link } from 'react-router-dom'
-import { ShopRoute, HomeRoute, RegisterRoute,AuthRoute } from '../utils/consts'
+import { ShopRoute, HomeRoute, RegisterRoute,AuthRoute} from '../utils/consts'
 const NavBar = () => {
     return (
         <Flex          
@@ -45,7 +45,7 @@ const NavBar = () => {
     </g>
 </svg>
                 </Link>
-                
+            
             </Flex>
         </Flex>
         )

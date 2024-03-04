@@ -1,11 +1,19 @@
-.nav-icon{
-
-}
 *{
     text-align: center;
     align-items: center;
     transition: all 0.5ms;
 }
-Button:hover{
+Button, .toTop-btn:hover{
+    cursor: pointer;
     background-color: rgba(0, 255, 170, 0.452);
+}
+.toTop-btn{
+    position: relative;
+    bottom:70px;
+    right:50px;
+    cursor: pointer;
+    z-index: 9999;
+    border: none;
+    border-radius: 50%;
+    box-shadow: 1px 1px 10px #5c5c5ccb;
 }
