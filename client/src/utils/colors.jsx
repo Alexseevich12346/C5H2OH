@@ -1,6 +1,6 @@
 const colors = () =>{
     return{
-        cyan:"#09e0e0",
+        white:"#ffffff",
         green:"#1ac058",
         
 

@@ -1,10 +1,10 @@
 import '../App.css';
 import { Text, Box, Flex} from '@chakra-ui/react';
 import { Link } from 'react-router-dom';
-import NavBar from '../components/NavBar';
+
+
 const Footer = () => {
     return (
-        <NavBar/>,
         <Flex
         display={'flex'}         
         align={'center'}

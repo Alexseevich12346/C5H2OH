@@ -20,16 +20,16 @@ const NavBar = () => {
             </Link>
             <Flex>
                 <Link to={ShopRoute}>
-                <Button colorScheme='blue' variant='ghost'>
-                Shop
-                </Button>
+                <button className='headerBtn'>
+                    Shop
+                </button>
                 </Link>
-                <Button colorScheme='blue' variant='ghost'>
+                <button className='headerBtn'>
                 About
-                </Button>
-                <Button colorScheme='blue' variant='ghost'>
+                </button>
+                <button className='headerBtn'>
                 Products
-                </Button>
+                </button>
             </Flex>
             <Flex>
             <Link  to={AuthRoute}>
