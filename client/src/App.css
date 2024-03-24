@@ -1,5 +1,4 @@
 *{
-    text-align: center;
     align-items: center;
     transition: all 0.5ms;
     font-family: "Nunito Sans", sans-serif;
@@ -10,92 +9,166 @@
       "wdth" 100,
       "YTLC" 500;
 }
-.headerBtn, .btnMain, .toTop-btn:hover{
-    cursor: pointer;
-    background: linear-gradient(90deg, #451046, #772849, #A83F4C, #DF5950) ;
-    background-size: 250% 250%;
-    animation: gradient 10s ease infinite;
-    transform: translate3d(0, 0, 0);
-    width: 190px;
-    font-size: 20px;
-    border-radius: 8px;
-    color: #fff;
-    margin:15px;
+@media only screen and (min-width: 992px) {
+    
+
+    .headerBtn, .btnMain, .toTop-btn:hover{
+        cursor: pointer;
+        background: linear-gradient(90deg, #451046, #772849, #A83F4C, #DF5950) ;
+        background-size: 250% 250%;
+        animation: gradient 10s ease infinite;
+        transform: translate3d(0, 0, 0);
+        width: 190px;
+        font-size: 20px;
+        border-radius: 8px;
+        color: #fff;
+        margin:15px;
+    }
+    @keyframes gradient {
+    0% {
+    background-position: 0% 50%;
+    }
+    50% {
+    background-position: 100% 50%;
+    }
+    100% {
+    background-position: 0% 50%;
+    }
+    }
+    .toTop-btn{
+        position: relative;
+        bottom:70px;
+        right:50px;
+        cursor: pointer;
+        z-index: 9999;
+        border: none;
+        border-radius: 50%;
+        box-shadow: 1px 1px 10px #5c5c5ccb;
+    }
+    .main{
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        width: 100%;
+        background-image: url(./images/main-screen__bgc.jpg) ;
+        background-size:100% ;
+        background-position: fixed;
+        background-repeat:no-repeat;
+        text-align: center;
+    }
+    .main_hed{
+        font-size: 84px;
+        color: #fff;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+    }
+    .time{
+        display: flex;
+        justify-content:center;
+        align-items: center;
+        color: #fff;
+        font-size:44px;
+        height: 115px;
+    }
+    .main_man{
+        display: flex;
+        flex-wrap: wrap;
+        width: 100%;
+        height: 600px;
+        justify-content: space-between;
+        flex-direction: column;
+        margin-top: 150px;
+    }
+    .time_times{
+        margin: 30px;
+        width:215px;
+        height: 215px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        background-color: #121212;
+    }
+    .time_times span{
+        font-weight: 400;
+    }
+    .main_two{
+        background-image: url(./images/bgc.jpg) ;
+        background-size:100% ;
+        background-position: fixed;
+        background-repeat:no-repeat;
+        background-clip:border-box;
+        width: 100%;
+        margin-top: 150px;
+    }
+    .kurs_po_obuch{
+        width: 100%;
+        height: 115px;
+        display: flex;
+        justify-content: space-evenly;
+    }
+    .ucheniki{
+        color: #fff;
+    }
+    .information{
+        display: flex;
+        justify-content: space-around;
+        flex-direction: column;
+        align-items: stretch
+
+    }
+    .inf_op{
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        width: 100%;
+        height: 500px;
+        border: 20px;
+    }
+    .foto{
+        border-image: linear-gradient(90deg, #7D6BFA, #977BFB, #AD89FB, #C89AFC) ;
+        margin-top:35px;
+        margin-right: 0px;
+        border-width:35px;
+        border-radius: 10px;
+        border: 20px solid transparent;
+        background: linear-gradient(#3b384b, #4d31eb) padding-box,
+        linear-gradient(var(--angle), #563dfc, #8363f7, #b191f8, #C89AFC) border-box;
+        animation: 8s rotate linear infinite;
+    }
+    @keyframes rotate {
+        to {
+        --angle: 360deg;
+        }
+    }
+    @property --angle {
+        syntax: "<angle>";
+        initial-value: 0deg;
+        inherits: false;
+    }
+    .h1_inf{
+        width: 500px;
+    }
+    h1{
+        font-size: 40px;
+        font-weight: 900;
+        color: #fff;
+        margin-bottom: 25px;
+    }
+    p, span{
+        font-weight: 300;
+        color: #fff;
+        font-size: 26px;
+    }
+    .ellipse{
+        width: 50px;
+        height: 50px;
+        border-radius: 50%;
+        margin-left: 41%;
+        margin-top: 3%;
+        border: 10px solid transparent;
+        background: linear-gradient(#131219, #131219) padding-box,
+          linear-gradient(var(--angle), #451046, #772849, #A83F4C, #DF5950) border-box;
+        animation: 8s rotate linear infinite;
+      }
 }
-@keyframes gradient {
- 0% {
-  background-position: 0% 50%;
- }
- 50% {
-  background-position: 100% 50%;
- }
- 100% {
-  background-position: 0% 50%;
- }
-}
-.toTop-btn{
-    position: relative;
-    bottom:70px;
-    right:50px;
-    cursor: pointer;
-    z-index: 9999;
-    border: none;
-    border-radius: 50%;
-    box-shadow: 1px 1px 10px #5c5c5ccb;
-}
-.main{
-    display: flex;
-    flex-direction: column;
-    flex-wrap: wrap;
-    width: 100%;
-    background-image: url(./images/main-screen__bgc.jpg) ;
-    background-size:100% ;
-    background-position: fixed;
-    background-repeat:no-repeat;
-}
-.main_hed{
-    font-size: 64px;
-    color: #fff;
-    width: 100%;
-}
-.time{
-    display: flex;
-    justify-content:center;
-    align-items: center;
-    color: #fff;
-    font-size:24px;
-    height: 115px;
-}
-.main_man{
-    display: flex;
-    flex-wrap: wrap;
-    width: 100%;
-    height: 600px;
-    justify-content: center;
-    margin-bottom: 165px;
-}
-.time_times{
-    margin: 30px;
-    width:115px;
-    height: 115px;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    background-color: #121212;
-}
-.kurs_po_obuch{
-    width: 100%;
-    height: 115px;
-    display: flex;
-    justify-content: space-evenly;
-}
-.ucheniki{
-    color: #fff;
-}
-.inf{
-    width: 500px;
-    height: 500px;
-    border: 20px;
-    border-color: #fff;
-    margin-top:35px;
-}   
