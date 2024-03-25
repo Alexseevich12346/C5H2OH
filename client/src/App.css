@@ -1,14 +1,17 @@
-*{
-    align-items: center;
-    transition: all 0.5ms;
-    font-family: "Nunito Sans", sans-serif;
-    font-optical-sizing: auto;
-    font-weight: 700;
-    font-style: normal;
-    font-variation-settings:
-      "wdth" 100,
-      "YTLC" 500;
-}
+@media only screen and (min-width: 92px) {
+    *{
+        align-items: center;
+        transition: all 0.5ms;
+        font-family: "Nunito Sans", sans-serif;
+        font-optical-sizing: auto;
+        font-weight: 700;
+        font-style: normal;
+        font-variation-settings:
+        "wdth" 100,
+        "YTLC" 500;
+    }
+    
+
     .headerBtn, .btnMain, .toTop-btn:hover{
         cursor: pointer;
         background: linear-gradient(90deg, #451046, #772849, #A83F4C, #DF5950) ;
@@ -234,4 +237,5 @@
         height: 500px;
         flex-direction: column;
     }
+}
 /* } */
