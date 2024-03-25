@@ -150,6 +150,12 @@
         width: 500px;
     }
     h1{
+        font-size: 60px;
+        font-weight: 700;
+        color: #fff;
+        margin-bottom: 25px;
+    }
+    p, span, .num, .txt{
         font-size: 40px;
         font-weight: 900;
         color: #fff;
@@ -160,15 +166,76 @@
         color: #fff;
         font-size: 26px;
     }
+    .p{
+       font-size: 60px;
+       font-weight: 700;
+        
+    }
     .ellipse{
         width: 50px;
         height: 50px;
         border-radius: 50%;
+        margin-left: 36%;
         margin-left: 41%;
         margin-top: 3%;
         border: 10px solid transparent;
         background: linear-gradient(#131219, #131219) padding-box,
           linear-gradient(var(--angle), #451046, #772849, #A83F4C, #DF5950) border-box;
         animation: 8s rotate linear infinite;
-      }
+    }
+    
+    .border_o{
+        border-image: linear-gradient(90deg, #7D6BFA, #977BFB, #AD89FB, #C89AFC) ;
+        margin-top:35px;
+        margin-right: 0px;
+        border-width:30px;
+        border: 75px solid transparent;
+        background: linear-gradient(#3b384b, #4d31eb) padding-box,
+        linear-gradient(var(--angle), #563dfc, #8363f7, #b191f8, #C89AFC) border-box;
+        animation: 8s rotate linear infinite;
+    }
+    .border_t{
+        border-image: linear-gradient(90deg, #7D6BFA, #977BFB, #AD89FB, #C89AFC) ;
+        margin-top:35px;
+        margin-right: 0px;
+        border-width:30px;
+        border: 65px solid transparent;
+        background: linear-gradient(#3b384b, #4d31eb) padding-box,
+        linear-gradient(var(--angle), #563dfc, #8363f7, #b191f8, #C89AFC) border-box;
+        animation: 8s rotate linear infinite;
+    }
+    .border_th{
+        border-image: linear-gradient(90deg, #7D6BFA, #977BFB, #AD89FB, #C89AFC) ;
+        margin-top:35px;
+        margin-right: 0px;
+        border-width:30px;
+        border: 55px solid transparent;
+        background: linear-gradient(#3b384b, #4d31eb) padding-box,
+        linear-gradient(var(--angle), #563dfc, #8363f7, #b191f8, #C89AFC) border-box;
+        animation: 8s rotate linear infinite;
+    }
+    .border_f{
+        border-image: linear-gradient(90deg, #7D6BFA, #977BFB, #AD89FB, #C89AFC) ;
+        margin-top:35px;
+        margin-right: 0px;
+        border-width:30px;
+        border: 45px solid transparent;
+        background: linear-gradient(#3b384b, #4d31eb) padding-box,
+        linear-gradient(var(--angle), #563dfc, #8363f7, #b191f8, #C89AFC) border-box;
+        animation: 8s rotate linear infinite;
+    }
+    .procent{
+        display: flex;
+    }
+    .profice{
+        display: flex;
+        flex-direction: column;
+    }
+    .pract, .work, .study{
+        display: flex;
+        width: 500px;
+        height: 500px;
+        flex-direction: column;
+    }
 }
+/* } */
