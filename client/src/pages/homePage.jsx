@@ -85,41 +85,44 @@ const HomePage = () =>{
                 </div>
                 <div className="profice">
                     <h1>Получите профессию прямо сейчас</h1>
-                    <div className="pract">
-                        <Image                    
-                            textAlign={'center'}
-                            src={IconOne}
-                            width={'100px'}
-                            alt='IconOne'
-                            float={'left'}
-                        >
-                        </Image>
-                        <p>Только практические навыки в работе</p>
-                        <span>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Fugiat animi, nihil laudantium ad, officia tempora repudiandae consequuntur eos ipsum quaerat alias. Odio, nesciunt inventore ex quisquam temporibus velit tempora sint!</span>
-                    </div>
-                    <div className="work">
-                        <Image                    
-                            textAlign={'center'}
-                            src={IconTwo}
-                            width={'100px'}
-                            alt='TheHost_IP-KVM'
-                            float={'left'}
-                        >
-                        </Image>
-                        <p>Работа на самом современном оборудовании</p>
-                        <span>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Fugiat animi, nihil laudantium ad, officia tempora repudiandae consequuntur eos ipsum quaerat alias. Odio, nesciunt inventore ex quisquam temporibus velit tempora sint!</span>
-                    </div>
-                    <div className="study">
-                        <Image                    
-                            textAlign={'center'}
-                            src={IconThree}
-                            width={'100px'}
-                            alt='TheHost_IP-KVM'
-                            float={'left'}
-                        >
-                        </Image>
-                        <p>Сертификация по окончании обучения</p>
-                        <span>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Fugiat animi, nihil laudantium ad, officia tempora repudiandae consequuntur eos ipsum quaerat alias. Odio, nesciunt inventore ex quisquam temporibus velit tempora sint!</span>
+                    <div className="prof_doc">
+                        <div className="pract">
+                            <Image                    
+                                textAlign={'center'}
+                                src={IconOne}
+                                width={'100px'}
+                                alt='IconOne'
+                                float={'left'}
+                            >
+                            </Image>
+                            <p>Только практические навыки в работе</p>
+                            <span>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Fugiat animi, nihil laudantium ad, officia tempora repudiandae consequuntur eos ipsum quaerat alias. Odio, nesciunt inventore ex quisquam temporibus velit tempora sint!</span>
+                        </div>
+                        <div className="work">
+                            <Image                    
+                                textAlign={'center'}
+                                src={IconTwo}
+                                width={'100px'}
+                                alt='IconTwo'
+                                float={'left'}
+
+                            >
+                            </Image>
+                            <p>Работа на самом современном оборудовании</p>
+                            <span>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Fugiat animi, nihil laudantium ad, officia tempora repudiandae consequuntur eos ipsum quaerat alias. Odio, nesciunt inventore ex quisquam temporibus velit tempora sint!</span>
+                        </div>
+                        <div className="study">
+                            <Image                    
+                                textAlign={'center'}
+                                src={IconThree}
+                                width={'100px'}
+                                alt='IconThree'
+                                float={'left'}
+                            >
+                            </Image>
+                            <p>Сертификация по окончании обучения</p>
+                            <span>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Fugiat animi, nihil laudantium ad, officia tempora repudiandae consequuntur eos ipsum quaerat alias. Odio, nesciunt inventore ex quisquam temporibus velit tempora sint!</span>
+                        </div>
                     </div>
                 </div>
             </div>

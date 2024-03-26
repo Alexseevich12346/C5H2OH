@@ -9,6 +9,7 @@
         font-variation-settings:
         "wdth" 100,
         "YTLC" 500;
+        color: #fff;
     }
     
 
@@ -19,8 +20,8 @@
         animation: gradient 10s ease infinite;
         transform: translate3d(0, 0, 0);
         width: 190px;
-        font-size: 20px;
-        border-radius: 8px;
+        font-size: 30px;
+        border-radius: 100px / 50px;
         color: #fff;
         margin:15px;
     }
@@ -78,7 +79,7 @@
         height: 600px;
         justify-content: space-between;
         flex-direction: column;
-        margin-top: 150px;
+        margin-top: 400px;
     }
     .time_times{
         margin: 30px;
@@ -231,11 +232,24 @@
         display: flex;
         flex-direction: column;
     }
+    .prof_doc{
+        display: flex;
+    }
     .pract, .work, .study{
         display: flex;
         width: 500px;
         height: 500px;
         flex-direction: column;
+    }
+    img{
+        background: transparent;
+    }
+    .flex_ayth_regist{
+        background-image: url(./images/bgc.jpg) ;
+        background-size:100% ;
+        background-position: fixed;
+        background-repeat:no-repeat;
+        background-clip:border-box;
     }
 }
 /* } */

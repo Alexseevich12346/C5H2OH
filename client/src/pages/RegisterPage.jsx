@@ -5,17 +5,18 @@ import { AuthRoute} from '../utils/consts';
 import AuthPage from './authPage';
 const RegisterPage = () => {
     return (
-        <Flex
+        <Flex className='flex_ayth_regist'
             width={'100%'}
             flexWrap={'wrap'}
             justify={'center'}
+            color={'white'}
         >
             <NavBarSh />
             <Flex // всей страницы 
                 width={'90%'}
                 justify={'center'}
                 alignItems={'center'}
-                height={'70vh'}
+                height={'95vh'}
             >
                 <Flex
                 boxShadow={'rgba(0,0,0, 0.24) 0px 3px 8px'}
@@ -24,7 +25,7 @@ const RegisterPage = () => {
                 flexWrap={'wrap'}
                 justify={'center'}
                 >
-                    <Text mt={'7%'} fontSize={'35px'} fontWeight={'bold'} textAlign={'center'} w={'100%'} color={'Black'}> Sign up</Text>
+                    <Text mt={'7%'} fontSize={'50px'} fontWeight={'bold'} textAlign={'center'} w={'100%'} color={'white'}> Sign up</Text>
                     <Stack spacing={4}>
                     <InputGroup>
                         <InputLeftElement pointerEvents='none' width={'25px'} top={'0px'} left={'10px'}>
@@ -66,7 +67,7 @@ const RegisterPage = () => {
                         <Button colorScheme='whatsapp' w={'250px'} textAlign={'center'}>Login</Button>
                     </WrapItem>
                     </Stack>
-                    <Text mr={'5px'}> Do you have an account? <Text color={'teal'}><Link to ={AuthRoute}>Login</Link></Text></Text>
+                    <Text mr={'5px'} textAlign={'center'}> Do you have an account? <Text color={'teal'}><Link to ={AuthRoute}>Login</Link></Text></Text>
 
                 </Flex>
         </Flex>       
