@@ -3,6 +3,7 @@ import NavBarSh from '../components/NavBarSh';
 import { Link } from 'react-router-dom';
 import { AuthRoute} from '../utils/consts';
 import AuthPage from './authPage';
+import { Radio, RadioGroup } from '@chakra-ui/react'
 const RegisterPage = () => {
     return (
         <Flex className='flex_ayth_regist'
@@ -37,6 +38,20 @@ const RegisterPage = () => {
                         <Input type='tel' placeholder='Login'/>
                         
                     </InputGroup>
+                    <RadioGroup defaultValue='4'>
+                    <Flex
+                        fontSize={'50px'}
+                    >
+                        <Stack spacing={24} direction='row'>
+                            <Radio colorScheme='red' value='1'>
+                                Male
+                            </Radio>
+                            <Radio colorScheme='pink' value='2'>
+                                Women
+                            </Radio>
+                        </Stack>
+                    </Flex>
+                    </RadioGroup>
                     <InputGroup>
                         <InputLeftElement pointerEvents='none' width={'25px'} top={'0px'} left={'10px'}>
                         <svg xmlns="http://www.w3.org/2000/svg" width="200" height="200" viewBox="0 0 16 16">

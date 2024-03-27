@@ -225,12 +225,20 @@
         linear-gradient(var(--angle), #563dfc, #8363f7, #b191f8, #C89AFC) border-box;
         animation: 8s rotate linear infinite;
     }
+    .start{
+        display: flex;
+        flex-direction: column;
+    }
     .procent{
         display: flex;
+        width: 60%;
+        text-align: center;
+        flex-direction: column;
     }
     .profice{
         display: flex;
         flex-direction: column;
+        margin-top: 150px;
     }
     .prof_doc{
         display: flex;

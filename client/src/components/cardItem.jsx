@@ -43,7 +43,7 @@ const CardItem = () =>{
                 <Box>
                     <Text
                     height={'100px'}
-                    fontSize={'26px'}
+                    fontSize={'28px'}
                     >
                        <br/> <b>Price: 1000$
                        </b>

@@ -41,7 +41,6 @@ const AuthPage = () => {
                         <Input type='tel' placeholder='Login'/>
                         
                     </InputGroup>
-
                     <InputGroup>
                         <InputLeftElement
                         pointerEvents='none'
