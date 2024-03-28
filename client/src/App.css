@@ -292,4 +292,37 @@
         animation-name: rotate-forever;
         animation-timing-function: linear;
       }
+      .image-container {
+        background: var(image) no-repeat center;
+        width: 250px;
+        height: 200px;
+        border-radius: 5px;
+        border: 1px solid var(borderc);
+        background-image: url(./images/logo.png);
+        background-size:100% ;
+        background-position: fixed;
+        background-repeat:no-repeat;
+        background-clip:border-box;
+      };
+
+      
+      .placeholder {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        background: linear-gradient(rgb(158, 15, 15), rgba(233, 19, 19, 0.2));
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
+      .container{
+          display: flex;
+          flex-wrap: wrap;
+          width: 1250px;
+          gap:70px;
+      }
+      .partners{
+        display: flex;
+        justify-content: center
+      }
 };

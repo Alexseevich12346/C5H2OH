@@ -8,6 +8,7 @@ import Countdown from '../countdown';
 import IconOne from '../images/icon-1.jpg'
 import IconTwo from '../images/icon-2.jpg'
 import IconThree from '../images/icon-3.jpg'
+import Logo from '../images/logo.png'
 
 
 const HomePage = () =>{
@@ -129,7 +130,33 @@ const HomePage = () =>{
                     <div className="partner">
                     <div class="loading-spinner"></div>
                     <h1>Партнеры - топовые бренды</h1>
+                    <div class="container">
+                        <div class="image-container" style={{image: "./src/images/logo.png",borderc:" black"}}>
+                            <div class="placeholder"></div>
+                        </div>
+                        <div class="image-container" style={{image: "./src/images/logo.png",borderc:" black"}}>
+                            <div class="placeholder"></div>
+                        </div>
+                        <div class="image-container" style={{image: "./src/images/logo.png",borderc:" black"}}>
+                            <div class="placeholder"></div>
+                        </div>
+                        <div class="image-container" style={{image: "./src/images/logo.png",borderc:" black"}}>
+                            <div class="placeholder"></div>
+                        </div>
+                        <div class="image-container" style={{image: "./src/images/logo.png",borderc:" black"}}>
+                            <div class="placeholder"></div>
+                        </div>
+                        <div class="image-container" style={{image: "./src/images/logo.png",borderc:" black"}}>
+                            <div class="placeholder"></div>
+                        </div>
+                        <div class="image-container" style={{image: "./src/images/logo.png",borderc:" black"}}>
+                            <div class="placeholder"></div>
+                        </div>
+                        <div class="image-container" style={{image: "./src/images/logo.png",borderc:" black"}}>
+                            <div class="placeholder"></div>
+                        </div>
                     </div>
+                </div>
                 </div>
             </div>
         </div>
