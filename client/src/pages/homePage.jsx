@@ -58,7 +58,7 @@ const HomePage = () =>{
                     <div className="start_inf">
                         <div class="loading-spinner"></div>
                         <h1>Быстрый старт</h1>
-                        <span className='nine_proc'>Больше 90% учеников прошли полный курс и смогли собрать свой первый компьютер</span>
+                        <span className='nine_proc'>Больше 90% учеников прошли полный курс и смогли <br/>собрать свой первый компьютер</span>
                     </div>
                     <div className="procent">
                         <div className="pro">
@@ -123,6 +123,12 @@ const HomePage = () =>{
                             <p>Сертификация по окончании обучения</p>
                             <span>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Fugiat animi, nihil laudantium ad, officia tempora repudiandae consequuntur eos ipsum quaerat alias. Odio, nesciunt inventore ex quisquam temporibus velit tempora sint!</span>
                         </div>
+                    </div>
+                </div>
+                <div className="partners">
+                    <div className="partner">
+                    <div class="loading-spinner"></div>
+                    <h1>Партнеры - топовые бренды</h1>
                     </div>
                 </div>
             </div>

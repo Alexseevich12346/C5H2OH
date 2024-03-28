@@ -172,19 +172,6 @@
        font-weight: 700;
         
     }
-    .ellipse{
-        width: 50px;
-        height: 50px;
-        border-radius: 50%;
-        margin-left: 36%;
-        margin-left: 41%;
-        margin-top: 3%;
-        border: 10px solid transparent;
-        background: linear-gradient(#131219, #131219) padding-box,
-          linear-gradient(var(--angle), #451046, #772849, #A83F4C, #DF5950) border-box;
-        animation: 8s rotate linear infinite;
-    }
-    
     .border_o{
         border-image: linear-gradient(90deg, #7D6BFA, #977BFB, #AD89FB, #C89AFC) ;
         margin-top:35px;
@@ -229,6 +216,17 @@
         display: flex;
         flex-direction: column;
     }
+    .start_inf{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        width: 100%;
+        justify-content: center;
+        margin-top: 150px;
+    }
+    .nine_proc{
+        width: 100%;
+    }
     .procent{
         display: flex;
         width: 60%;
@@ -258,6 +256,40 @@
         background-position: fixed;
         background-repeat:no-repeat;
         background-clip:border-box;
+    };
+    .loading-spinner {
+        display: inline-block;
+
     }
-}
-/* } */
+    .loading-spinner  {
+        width: 95px;
+        height: 95px;
+        border: 15px solid gradient;
+        border-image: linear-gradient(90deg, #451046, #772849, #A83F4C, #DF5950) ;
+        border-width:15px;
+        background: linear-gradient(#000000, #000000) padding-box,
+        linear-gradient(var(--angle), #451046, #772849, #A83F4C, #DF5950) border-box;
+        animation: 8s rotate linear infinite;
+        border-radius: 50%;
+        display: inline-block;
+        margin-right: 75px;
+    }
+    .loading-spinner{
+        border-right-color: transparent;
+    }
+      @keyframes rotate-forever {
+        0% {
+          transform: rotate(0deg);
+        }
+        100% {
+          transform: rotate(360deg);
+        }
+      }
+      
+      .loading-spinner {
+        animation-duration: 0.75s;
+        animation-iteration-count: infinite;
+        animation-name: rotate-forever;
+        animation-timing-function: linear;
+      }
+};
