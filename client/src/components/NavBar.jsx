@@ -1,11 +1,13 @@
 import '../App.css';
 import { Text, Box, Flex, Grid, Input,Heading, Button} from '@chakra-ui/react';
-import { Link } from 'react-router-dom'
-import { ShopRoute, HomeRoute, RegisterRoute,AuthRoute} from '../utils/consts'
-import { useRef, useEffect, useState } from 'react'
+import { Link } from 'react-router-dom';
+import { ShopRoute, HomeRoute, RegisterRoute,AuthRoute, NewsRoute} from '../utils/consts';
+import { useRef, useEffect, useState } from 'react';
+import { useLocation } from 'react-router-dom';
 const NavBar = () => {
     const prevScrollY = useRef(0);
     const [isNavBarVisible, setIsNavBarVisible] = useState(true);
+    const location = useLocation();
      
     useEffect(() => {
         const scroll = () =>{
@@ -23,7 +25,17 @@ const NavBar = () => {
         return() => window.removeEventListener("scroll", scroll);
     }, []);
 
-
+    useEffect(()=>{
+        const scrollToSection = window.location.hash.substring(1);
+        if(scrollToSection){
+            const section = document.getElementById(scrollToSection);
+            if(section){
+                section.scrollIntoView({
+                    behavior: "smooth",
+                })
+            }
+        }
+    }, [window.location.hash])
     return (
         <Flex          
         align={'center'}
@@ -50,12 +62,19 @@ const NavBar = () => {
                     Shop
                 </button>
                 </Link>
-                <button className='headerBtn'>
-                About
-                </button>
+                <Link to={`${HomeRoute}#about`}>
+                    <button className='headerBtn'>
+                    About
+                    </button>
+                </Link>
                 <button className='headerBtn'>
                 Products
                 </button>
+                <Link to={NewsRoute}>
+                <button className='headerBtn'>
+                    News
+                </button>
+                </Link>
             </Flex>
             <Flex>
             <Link  to={AuthRoute}>
