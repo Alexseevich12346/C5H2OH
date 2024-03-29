@@ -7,17 +7,20 @@ import RegisterPage from './RegisterPage';
 
 const AuthPage = () => {
     return (
-        <Flex
+        <Flex className='flex_ayth_regist'
             width={'100%'}
             flexWrap={'wrap'}
             justify={'center'}
+            color={'white'}
+            
+            
         >
             <NavBarSh />
             <Flex // всей страницы 
                 width={'90%'}
                 justify={'center'}
                 alignItems={'center'}
-                height={'70vh'}
+                height={'95vh'}
             >
                 <Flex
                 boxShadow={'rgba(0,0,0, 0.24) 0px 3px 8px'}
@@ -26,7 +29,7 @@ const AuthPage = () => {
                 flexWrap={'wrap'}
                 justify={'center'}
                 >
-                    <Text mt={'7%'} fontSize={'35px'} fontWeight={'bold'} textAlign={'center'} w={'100%'} color={'Black'}> Sign in</Text>
+                    <Text mt={'7%'} fontSize={'50px'} fontWeight={'bold'} textAlign={'center'} w={'100%'} color={'white'}> Sign in</Text>
                     <Stack spacing={4}>
                     <InputGroup>
                         <InputLeftElement pointerEvents='none' width={'25px'} top={'0px'} left={'10px'}>
@@ -38,7 +41,6 @@ const AuthPage = () => {
                         <Input type='tel' placeholder='Login'/>
                         
                     </InputGroup>
-
                     <InputGroup>
                         <InputLeftElement
                         pointerEvents='none'
@@ -58,7 +60,7 @@ const AuthPage = () => {
                         <Button colorScheme='whatsapp' w={'250px'} textAlign={'center'}>Login</Button>
                     </WrapItem>
                     </Stack>
-                    <Text mr={'5px'}> Do you have an account? <Text color={'teal'}><Link to ={RegisterRoute}>Register</Link></Text></Text>
+                    <Text mr={'5px'}  textAlign={'center'}> Do you have an account? <Text color={'teal'}><Link to ={RegisterRoute}>Register</Link></Text></Text>
 
                 </Flex>
         </Flex>       

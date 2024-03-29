@@ -3,19 +3,21 @@ import NavBarSh from '../components/NavBarSh';
 import { Link } from 'react-router-dom';
 import { AuthRoute} from '../utils/consts';
 import AuthPage from './authPage';
+import { Radio, RadioGroup } from '@chakra-ui/react'
 const RegisterPage = () => {
     return (
-        <Flex
+        <Flex className='flex_ayth_regist'
             width={'100%'}
             flexWrap={'wrap'}
             justify={'center'}
+            color={'white'}
         >
             <NavBarSh />
             <Flex // всей страницы 
                 width={'90%'}
                 justify={'center'}
                 alignItems={'center'}
-                height={'70vh'}
+                height={'95vh'}
             >
                 <Flex
                 boxShadow={'rgba(0,0,0, 0.24) 0px 3px 8px'}
@@ -24,7 +26,7 @@ const RegisterPage = () => {
                 flexWrap={'wrap'}
                 justify={'center'}
                 >
-                    <Text mt={'7%'} fontSize={'35px'} fontWeight={'bold'} textAlign={'center'} w={'100%'} color={'Black'}> Sign up</Text>
+                    <Text mt={'7%'} fontSize={'50px'} fontWeight={'bold'} textAlign={'center'} w={'100%'} color={'white'}> Sign up</Text>
                     <Stack spacing={4}>
                     <InputGroup>
                         <InputLeftElement pointerEvents='none' width={'25px'} top={'0px'} left={'10px'}>
@@ -36,6 +38,20 @@ const RegisterPage = () => {
                         <Input type='tel' placeholder='Login'/>
                         
                     </InputGroup>
+                    <RadioGroup defaultValue='4'>
+                    <Flex
+                        fontSize={'50px'}
+                    >
+                        <Stack spacing={24} direction='row'>
+                            <Radio colorScheme='red' value='1'>
+                                Male
+                            </Radio>
+                            <Radio colorScheme='pink' value='2'>
+                                Women
+                            </Radio>
+                        </Stack>
+                    </Flex>
+                    </RadioGroup>
                     <InputGroup>
                         <InputLeftElement pointerEvents='none' width={'25px'} top={'0px'} left={'10px'}>
                         <svg xmlns="http://www.w3.org/2000/svg" width="200" height="200" viewBox="0 0 16 16">
@@ -66,7 +82,7 @@ const RegisterPage = () => {
                         <Button colorScheme='whatsapp' w={'250px'} textAlign={'center'}>Login</Button>
                     </WrapItem>
                     </Stack>
-                    <Text mr={'5px'}> Do you have an account? <Text color={'teal'}><Link to ={AuthRoute}>Login</Link></Text></Text>
+                    <Text mr={'5px'} textAlign={'center'}> Do you have an account? <Text color={'teal'}><Link to ={AuthRoute}>Login</Link></Text></Text>
 
                 </Flex>
         </Flex>       
