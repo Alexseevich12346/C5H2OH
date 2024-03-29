@@ -1,15 +1,16 @@
-*{
-    align-items: center;
-    transition: all 0.5ms;
-    font-family: "Nunito Sans", sans-serif;
-    font-optical-sizing: auto;
-    font-weight: 700;
-    font-style: normal;
-    font-variation-settings:
-      "wdth" 100,
-      "YTLC" 500;
-}
-/* @media only screen and (min-width: 992px) { */
+@media only screen and (min-width: 92px) {
+    *{
+        align-items: center;
+        transition: all 0.5ms;
+        font-family: "Nunito Sans", sans-serif;
+        font-optical-sizing: auto;
+        font-weight: 700;
+        font-style: normal;
+        font-variation-settings:
+        "wdth" 100,
+        "YTLC" 500;
+        color: #fff;
+    }
     
 
     .headerBtn, .btnMain, .toTop-btn:hover{
@@ -19,8 +20,8 @@
         animation: gradient 10s ease infinite;
         transform: translate3d(0, 0, 0);
         width: 190px;
-        font-size: 20px;
-        border-radius: 8px;
+        font-size: 30px;
+        border-radius: 100px / 50px;
         color: #fff;
         margin:15px;
     }
@@ -78,7 +79,7 @@
         height: 600px;
         justify-content: space-between;
         flex-direction: column;
-        margin-top: 150px;
+        margin-top: 400px;
     }
     .time_times{
         margin: 30px;
@@ -156,6 +157,12 @@
         margin-bottom: 25px;
     }
     p, span, .num, .txt{
+        font-size: 40px;
+        font-weight: 900;
+        color: #fff;
+        margin-bottom: 25px;
+    }
+    p, span{
         font-weight: 300;
         color: #fff;
         font-size: 26px;
@@ -165,18 +172,6 @@
        font-weight: 700;
         
     }
-    .ellipse{
-        width: 50px;
-        height: 50px;
-        border-radius: 50%;
-        margin-left: 36%;
-        margin-top: 3%;
-        border: 10px solid transparent;
-        background: linear-gradient(#131219, #131219) padding-box,
-          linear-gradient(var(--angle), #451046, #772849, #A83F4C, #DF5950) border-box;
-        animation: 8s rotate linear infinite;
-    }
-    
     .border_o{
         border-image: linear-gradient(90deg, #7D6BFA, #977BFB, #AD89FB, #C89AFC) ;
         margin-top:35px;
@@ -217,12 +212,34 @@
         linear-gradient(var(--angle), #563dfc, #8363f7, #b191f8, #C89AFC) border-box;
         animation: 8s rotate linear infinite;
     }
+    .start{
+        display: flex;
+        flex-direction: column;
+    }
+    .start_inf{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        width: 100%;
+        justify-content: center;
+        margin-top: 150px;
+    }
+    .nine_proc{
+        width: 100%;
+    }
     .procent{
         display: flex;
+        width: 60%;
+        text-align: center;
+        flex-direction: column;
     }
     .profice{
         display: flex;
         flex-direction: column;
+        margin-top: 150px;
+    }
+    .prof_doc{
+        display: flex;
     }
     .pract, .work, .study{
         display: flex;
@@ -230,4 +247,82 @@
         height: 500px;
         flex-direction: column;
     }
-/* } */
+    img{
+        background: transparent;
+    }
+    .flex_ayth_regist{
+        background-image: url(./images/bgc.jpg) ;
+        background-size:100% ;
+        background-position: fixed;
+        background-repeat:no-repeat;
+        background-clip:border-box;
+    };
+    .loading-spinner {
+        display: inline-block;
+
+    }
+    .loading-spinner  {
+        width: 95px;
+        height: 95px;
+        border: 15px solid gradient;
+        border-image: linear-gradient(90deg, #451046, #772849, #A83F4C, #DF5950) ;
+        border-width:15px;
+        background: linear-gradient(#000000, #000000) padding-box,
+        linear-gradient(var(--angle), #451046, #772849, #A83F4C, #DF5950) border-box;
+        animation: 8s rotate linear infinite;
+        border-radius: 50%;
+        display: inline-block;
+        margin-right: 75px;
+    }
+    .loading-spinner{
+        border-right-color: transparent;
+    }
+      @keyframes rotate-forever {
+        0% {
+          transform: rotate(0deg);
+        }
+        100% {
+          transform: rotate(360deg);
+        }
+      }
+      
+      .loading-spinner {
+        animation-duration: 0.75s;
+        animation-iteration-count: infinite;
+        animation-name: rotate-forever;
+        animation-timing-function: linear;
+      }
+      .image-container {
+        background: var(image) no-repeat center;
+        width: 250px;
+        height: 200px;
+        border-radius: 5px;
+        border: 1px solid var(borderc);
+        background-image: url(./images/logo.png);
+        background-size:100% ;
+        background-position: fixed;
+        background-repeat:no-repeat;
+        background-clip:border-box;
+      };
+
+      
+      .placeholder {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        background: linear-gradient(rgb(158, 15, 15), rgba(233, 19, 19, 0.2));
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
+      .container{
+          display: flex;
+          flex-wrap: wrap;
+          width: 1250px;
+          gap:70px;
+      }
+      .partners{
+        display: flex;
+        justify-content: center
+      }
+};
