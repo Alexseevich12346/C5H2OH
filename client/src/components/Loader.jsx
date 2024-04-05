@@ -8,7 +8,35 @@ const Loader = () => {
             align={'center'}
             bg={'midnight'} 
         >
-            <div>Loading...</div>
+
+            <main id="container">
+                    
+                    <div class="dots">
+                        <div class="dot"></div>
+                        <div class="dot"></div>
+                        <div class="dot"></div>
+                        <div class="dot"></div>
+                        <div class="dot"></div>
+                        <div class="dot"></div>
+                        <div class="dot"></div>
+                        <div class="dot"></div>
+                        <div class="dot"></div>
+                        <div class="dot"></div>
+                    </div>
+                    <div class="dots2">
+                        <div class="dot2"></div>
+                        <div class="dot2"></div>
+                        <div class="dot2"></div>
+                        <div class="dot2"></div>
+                        <div class="dot2"></div>
+                        <div class="dot2"></div>
+                        <div class="dot2"></div>
+                        <div class="dot2"></div>
+                        <div class="dot2"></div>
+                        <div class="dot2"></div>
+                    </div>
+                    <div class="circle"></div>
+            </main>
         </Flex>
     )
 }
