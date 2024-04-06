@@ -17,7 +17,7 @@ const HomePage = () =>{
     const [isLoading,setIsLoading] = useState(true);
     useEffect(() => {
         const fetchData = async () => {
-            await new Promise(resolve => setTimeout(resolve,1000));
+            await new Promise(resolve => setTimeout(resolve,5000));
             setIsLoading(false)
         }
         fetchData();
@@ -175,9 +175,13 @@ const HomePage = () =>{
                                 </div>
                             </div>
                         </div>
+                        <div className="programme_stydies">
+                            <h1>Программа обучения</h1>
+                            <span className='nine_proc'>Больше 90% учеников прошли полный курс и смогли <br/>собрать свой первый компьютер</span>
                         </div>
                     </div>
                 </div>
+            </div>
                 <Flex
                     h={'100vh'}
                 >
