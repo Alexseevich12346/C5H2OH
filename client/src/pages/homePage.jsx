@@ -1,5 +1,5 @@
 import '../App.css'; 
-import { Box } from '@chakra-ui/react';
+import { Box,Link } from '@chakra-ui/react';
 import NavBar from '../components/NavBar';
 import Vot from '../images/pc.png'
 import  Footer  from '../components/Footer'
@@ -41,7 +41,11 @@ const HomePage = () =>{
                     <div className="main_two">
                         <div className="kurs_po_obuch">
                             <div className="but_kurs">
-                                <button className='btnMain' src='#'>Заказать курс</button>
+                                <Link top={''}>
+                                <button className='btnMain'>
+                                    Заказать курс
+                                </button>
+                                </Link>
                             </div>
                             <div className="ucheniki">
                                     <div className="uch_vsego">Учеников всего:       200</div>

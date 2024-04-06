@@ -1,9 +1,10 @@
-import {ShopRoute, HomeRoute, RegisterRoute, AuthRoute , NewsRoute} from "./utils/consts";
+import {ShopRoute, HomeRoute, RegisterRoute, AuthRoute , NewsRoute, CourseRoute} from "./utils/consts";
 import ShopPage from "./pages/ShopPage";
 import HomePage from "./pages/homePage";
 import AuthPage from "./pages/authPage";
 import RegisterPage from "./pages/RegisterPage";
 import NewsPage from "./pages/NewsPage";
+import CoursePage from "./pages/CoursePage";
 
 export const publicRoutes = [
     {
@@ -25,6 +26,10 @@ export const publicRoutes = [
     {
         path: NewsRoute,
         Element: NewsPage
+    },
+    { 
+        path: CourseRoute,
+        Element: CoursePage
     }
 ];
 export const privateRoutes = [
