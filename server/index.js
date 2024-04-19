@@ -12,8 +12,8 @@ app.use(express.json());
 app.use(cookieParser);
 app.use(cors({
   credentials: true,
-  origin:
-}));
+  origin: baseURL
+  }));
 const options = {
   dbName: "VideoKat",
   origin: baseURL

@@ -11,6 +11,7 @@ import IconThree from '../images/icon-3.jpg'
 import Logo from '../images/logo.png'
 import { useEffect, useState } from 'react';
 import Loader from '../components/Loader'
+import Carousel from '../components/Carousel'
 
 
 const HomePage = () =>{
@@ -74,6 +75,7 @@ const HomePage = () =>{
                             </div>
                         </div>
                         <div className="start">
+                            <Carousel/>
                             <div className="start_inf">
                                 <div class="loading-spinner"></div>
                                 <h1>Быстрый старт</h1>
