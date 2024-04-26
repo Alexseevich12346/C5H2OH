@@ -34,10 +34,10 @@ const Countdown = () => {
 
   return (
     <div className="time">
-      <span className="time_times">{days} Days</span>
-      <span className="time_times">{hours} Hours</span>
-      <span className="time_times">{minutes} Minutes</span>
-      <span className="time_times">{seconds} Seconds</span>
+      <span className="time_times">{days} Дней</span>
+      <span className="time_times">{hours} Часов</span>
+      <span className="time_times">{minutes} Минут</span>
+      <span className="time_times">{seconds} Секунд</span>
     </div>
   );
 };

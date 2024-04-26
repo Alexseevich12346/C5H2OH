@@ -12,6 +12,7 @@ import Logo from '../images/logo.png'
 import { useEffect, useState } from 'react';
 import Loader from '../components/Loader'
 import Carousel from '../components/Carousel'
+import TeacherOne from '../images/teacher-1.jpg'
 
 
 const HomePage = () =>{
@@ -83,17 +84,17 @@ const HomePage = () =>{
                             </div>
                             <div className="procent">
                                 <div className="pro">
-                                    <div className="num">100%</div>
+                                    <div className="num">1%</div>
                                     <div className="border_o"></div>
                                     <div className="txt">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dolorem necessitatibus ea debitis, architecto accusamus quas a! Id culpa ullam, natus labore voluptate fugit odio rem ducimus reprehenderit, ipsam, qui quisquam.</div>
                                 </div>
                                 <div className="pro">
-                                    <div className="num">75%</div>
+                                    <div className="num">35%</div>
                                     <div className="border_t"></div>
                                     <div className="txt">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Cumque commodi quaerat blanditiis delectus dicta aliquam, saepe culpa excepturi laborum temporibus. Distinctio voluptatem inventore ea maxime reprehenderit maiores omnis. Alias, necessitatibus.</div>
                                 </div>
                                 <div className="pro">
-                                    <div className="num">50%</div>
+                                    <div className="num">75%</div>
                                     <div className="border_th"></div>
                                     <div className="txt">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Cumque commodi quaerat blanditiis delectus dicta aliquam, saepe culpa excepturi laborum temporibus. Distinctio voluptatem inventore ea maxime reprehenderit maiores omnis. Alias, necessitatibus.</div>
                                 </div>
@@ -180,6 +181,80 @@ const HomePage = () =>{
                         <div className="programme_stydies">
                             <h1>Программа обучения</h1>
                             <span className='nine_proc'>Больше 90% учеников прошли полный курс и смогли <br/>собрать свой первый компьютер</span>
+                            <div class="timeline">
+                                <div class="line"></div>
+                                <div class="week left" style={{top: "20px"}}><span>Красивая часть курса,
+                                    которая помогает в успехе</span>
+                                </div>
+                                <div class="week right" style={{top: "100px"}}><span>Красивая часть курса,
+                                    которая помогает в успехе</span>
+                                </div>
+                                <div class="week left" style={{top: "180px"}}><span>Красивая часть курса,
+                                    которая помогает в успехе</span>
+                                </div>
+                                <div class="week right" style={{top: "260px"}}><span>Красивая часть курса,
+                                    которая помогает в успехе</span>
+                                </div>
+                                <div class="week left" style={{top: "340px"}}><span>Красивая часть курса,
+                                    которая помогает в успехе</span>
+                                </div>
+                                <div class="week right" style={{top: "420px"}}><span>Красивая часть курса,
+                                    которая помогает в успехе</span>
+                                </div>
+                                <div class="week left" style={{top: "500px"}}><span>Красивая часть курса,
+                                    которая помогает в успехе</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div className="teachers">
+                            <div class="loading-spinner"></div>
+                            <h1>Ваши преподаватели</h1>
+                            <div className="tabloid">
+                                <div class="profile-card">
+                                    <Image
+                                         textAlign={'center'}
+                                         src={TeacherOne}
+                                         width={'100px'}
+                                         alt='TeacherOne'
+                                         float={'left'}
+                                         class="profile-photo"
+                                    />
+                                    <h1>Иван Иванов</h1>
+                                    <p class="title">Web Developer</p>
+                                    <button class="bio-button">Биография</button>
+                                    <div class="bio-popup">Иван — опытный веб-разработчик, работающий в индустрии более 5 лет...</div>
+                                </div>
+                                <div class="profile-card">
+                                    <Image
+                                         textAlign={'center'}
+                                         src={TeacherOne}
+                                         width={'100px'}
+                                         alt='TeacherOne'
+                                         float={'left'}
+                                         class="profile-photo"
+                                    />
+                                    <h1>Иван Иванов</h1>
+                                    <p class="title">Web Developer</p>
+                                    <button class="bio-button">Биография</button>
+                                    <div class="bio-popup">Иван — опытный веб-разработчик, работающий в индустрии более 5 лет...</div>
+                                </div>
+                                <div class="profile-card">
+                                    <Image
+                                         textAlign={'center'}
+                                         src={TeacherOne}
+                                         width={'100px'}
+                                         alt='TeacherOne'
+                                         float={'left'}
+                                         class="profile-photo"
+                                    />
+                                    <h1>Иван Иванов</h1>
+                                    <p class="title">Web Developer</p>
+                                    <button class="bio-button">Биография</button>
+                                    <div class="bio-popup">Иван — опытный веб-разработчик, работающий в индустрии более 5 лет...</div>
+                                </div>
+                                <div className="teacher_two"></div>
+                                <div className="teacher_three"></div>
+                            </div>
                         </div>
                     </div>
                 </div>
