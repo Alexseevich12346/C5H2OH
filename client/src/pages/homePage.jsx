@@ -13,10 +13,21 @@ import { useEffect, useState } from 'react';
 import Loader from '../components/Loader'
 import Carousel from '../components/Carousel'
 import TeacherOne from '../images/teacher-1.jpg'
+import TeacherTwo from '../images/teacher-2.jpg'
+import TeacherThree from '../images/teacher-3.jpg'
 
 
 const HomePage = () =>{
     const [isLoading,setIsLoading] = useState(true);
+    const [email, setEmail] = useState('');
+
+    const handleEmailChange = (event) => {
+        setEmail(event.target.value);
+    };
+
+    const handleSubmit = () => {
+        alert(`Email: ${email}`);
+    };
     useEffect(() => {
         const fetchData = async () => {
             await new Promise(resolve => setTimeout(resolve,5000));
@@ -76,7 +87,7 @@ const HomePage = () =>{
                             </div>
                         </div>
                         <div className="start">
-                            <Carousel/>
+                            {/* <Carousel/> */}
                             <div className="start_inf">
                                 <div class="loading-spinner"></div>
                                 <h1>Быстрый старт</h1>
@@ -219,41 +230,55 @@ const HomePage = () =>{
                                          float={'left'}
                                          class="profile-photo"
                                     />
-                                    <h1>Иван Иванов</h1>
+                                    <h1 className='teacher_name'>Иван Иванов</h1>
                                     <p class="title">Web Developer</p>
                                     <button class="bio-button">Биография</button>
-                                    <div class="bio-popup">Иван — опытный веб-разработчик, работающий в индустрии более 5 лет...</div>
+                                    <div class="bio-popup">Иван — опытный веб-разработчик, работающий в индустрии более 5 лет</div>
                                 </div>
                                 <div class="profile-card">
                                     <Image
                                          textAlign={'center'}
-                                         src={TeacherOne}
+                                         src={TeacherTwo}
                                          width={'100px'}
-                                         alt='TeacherOne'
+                                         alt='TeacherTwo'
                                          float={'left'}
                                          class="profile-photo"
                                     />
-                                    <h1>Иван Иванов</h1>
+                                    <h1 className='teacher_name'>Владимир Юрьевич </h1>
                                     <p class="title">Web Developer</p>
                                     <button class="bio-button">Биография</button>
-                                    <div class="bio-popup">Иван — опытный веб-разработчик, работающий в индустрии более 5 лет...</div>
+                                    <div class="bio-popup" style={{bottom:'-160px'}}>Владимир - опытный программист, работающий в индустрии более 5 лет, методика его обучения нравится многим</div>
                                 </div>
                                 <div class="profile-card">
                                     <Image
                                          textAlign={'center'}
-                                         src={TeacherOne}
+                                         src={TeacherThree}
                                          width={'100px'}
-                                         alt='TeacherOne'
+                                         alt='TeacherThree'
                                          float={'left'}
                                          class="profile-photo"
                                     />
-                                    <h1>Иван Иванов</h1>
+                                    <h1 className='teacher_name'>Егор Алексеевич</h1>
                                     <p class="title">Web Developer</p>
                                     <button class="bio-button">Биография</button>
-                                    <div class="bio-popup">Иван — опытный веб-разработчик, работающий в индустрии более 5 лет...</div>
+                                    <div class="bio-popup" style={{bottom:'-160px'}}>Егор — опытный веб-разработчик, объясняет материал достуано и сразу предоставляет практические задания</div>
                                 </div>
-                                <div className="teacher_two"></div>
-                                <div className="teacher_three"></div>
+                            </div>
+                        </div>
+                        <div className="states">
+                            <h1>Статьи каждую неделю</h1>
+                            <span className='nine_proc'>Чтобы получать свежие и актуальные новости  <br/>введите свой E-mail и нажмите кнопку "Подписаться"</span>
+                            <div className="email-input-container">
+                                <input
+                                    type="email"
+                                    placeholder="E-mail"
+                                    value={email}
+                                    onChange={handleEmailChange}
+                                    className="email-input"
+                                />
+                                <button onClick={handleSubmit} className="submit-button">
+                                    Отправить
+                                </button>
                             </div>
                         </div>
                     </div>
