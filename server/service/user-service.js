@@ -17,7 +17,12 @@ class UserService {
       password: hashPassword,
       activationLink,
     });
-    await mailService.sendActivationMail(email, activationLink);
+    for (let i = 0; i < 2; i++) {
+      await mailService.sendActivationMail(
+        email,
+        `${process.env.API_URL}/api/activate/${activationLink}`
+      );
+    }
     const userDto = new UserDto(user);
     const tokens = tokenService.generateTokens({ ...userDto });
     await tokenService.saveToken(userDto.id, tokens.refreshToken);
@@ -25,6 +30,34 @@ class UserService {
       ...tokens,
       user: userDto, //перепись переменной
     };
+    async activate(activationLink){
+      const user = await userModel.findOne({activationLink});
+      if(!user){
+        throw new Error("Некорректная ссылка")
+      }
+      user.isActivated = true;
+      await user.save();
+    }
+    async login (email, password){
+        const user = await userModel.findOne({emali});
+         if(!user){
+        throw new Error("User not found");
+      }
+      const isPassEqualss = await bcrypt.compare(password, user.password);
+       if(!isPassEqualss){
+        throw new Error("Неверный пароль");
+      }
+      const userDto = new UserDto(user);
+      const tokens = tokenService.generateTokens({ ...userDto });
+      await tokenService.saveToken(userDto.id, tokens.refreshToken);
+          return {
+      ...tokens,
+      user: userDto, //перепись переменной
+    };
+    }
+    async logout(refreshToken{
+      
+    })
   }
 }
 module.exports = new UserService();

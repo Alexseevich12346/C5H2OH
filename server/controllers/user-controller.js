@@ -15,14 +15,28 @@ class UserController {
   }
   async login(req, res, next) {
     try {
+      const { email, password } = req.body();
+      const userData = await userService.login(email, password);
+      res.cookie("refreshToken", userData.refreshToken, {
+        maxAge: 30 * 24 * 60 * 60 * 1000,
+        httpOnly: true,
+      });
+      return res.json(userData);
     } catch (e) {}
   }
   async logout(req, res, next) {
     try {
+      const { refreshToken } = req.cookie;
+      const token = await userService.logout(refreshToken);
+      res.clearCookie("refreshToken");
+      return res.json(refreshToken);
     } catch (e) {}
   }
   async activate(req, res, next) {
     try {
+      const activationLink = req.params.link;
+      await userService.activate(activationLink);
+      return res.redirect(process.env.LOCAL_CLIENT_URL);
     } catch (e) {}
   }
   async refresh(req, res, next) {
