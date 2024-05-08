@@ -1,9 +1,10 @@
 import '../App.css';
-import { Text, Box, Flex, Grid, Input,Heading, Button} from '@chakra-ui/react';
+import { Text, Box, Flex, Grid, Input,Heading, Image} from '@chakra-ui/react';
 import { Link } from 'react-router-dom';
 import { ShopRoute, HomeRoute, RegisterRoute,AuthRoute, NewsRoute} from '../utils/consts';
 import { useRef, useEffect, useState } from 'react';
 import { useLocation } from 'react-router-dom';
+import logo_header from '../images/logo_header.svg'
 const NavBar = () => {
     const prevScrollY = useRef(0);
     const [isNavBarVisible, setIsNavBarVisible] = useState(true);
@@ -54,7 +55,15 @@ const NavBar = () => {
             <Link
             to={HomeRoute}
             >
-                <Heading>Videockat</Heading> 
+                <Heading>
+                    <Image
+                        textAlign={'center'}
+                        src={logo_header}
+                        width={'75px'}
+                        alt='logo_header'
+                        float={'left'}
+                    />
+                </Heading> 
             </Link>
             <Flex>
                 <Link to={ShopRoute}>

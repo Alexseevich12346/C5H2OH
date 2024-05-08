@@ -233,7 +233,7 @@ const HomePage = () =>{
                                     <h1 className='teacher_name'>Иван Иванов</h1>
                                     <p class="title">Web Developer</p>
                                     <button class="bio-button">Биография</button>
-                                    <div class="bio-popup">Иван — опытный веб-разработчик, работающий в индустрии более 5 лет</div>
+                                    <div class="bio-popup"style={{bottom:'-160px'}}>Иван — опытный веб-разработчик, работающий в индустрии более 5 лет. Любит кофе, особенно на занятиях при новых темах</div>
                                 </div>
                                 <div class="profile-card">
                                     <Image

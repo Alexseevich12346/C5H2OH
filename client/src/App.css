@@ -1,7 +1,4 @@
-.css-1yeiifd{
-  height: 0px;
-}
-@media only screen and (min-width: 92px) {
+@media only screen and (min-width: 144px) and (max-width: 9999px) {
     *{
         align-items: center;
         transition: all 0.5ms;
@@ -15,11 +12,32 @@
         color: #fff;
         transition: all 1.2s;
     }
-    
-
-    .headerBtn, .btnMain, .toTop-btn:hover,.submit-button,
-    .header_btn
-    {
+    .follow_us{
+      width: 1000px;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      color: rgba(255, 255, 255, 0.5);
+    }
+    .mes{
+      display: flex;
+      justify-content: center;
+      width: 500px;
+      gap: 50px;
+    }
+    .mes_click{
+      height: 75px;
+      display: flex;
+      margin-top:35px;
+      border-width:35px;
+      border-radius: 100px / 100px;
+      border: 10px solid transparent;
+      background: linear-gradient(#3b384b, #4d31eb) padding-box,
+      linear-gradient(var(--angle), #563dfc, #8363f7, #b191f8, #C89AFC) border-box;
+      animation: 8s rotate linear infinite;
+    }
+    .btnMain, .toTop-btn,.submit-button,.header_btn{
         cursor: pointer;
         background: linear-gradient(90deg, #451046, #772849, #A83F4C, #DF5950) ;
         background-size: 250% 250%;
@@ -28,6 +46,13 @@
         width: 190px;
         font-size: 30px;
         border-radius: 100px / 50px;
+        color: #fff;
+        margin:15px;
+    }
+    .headerBtn{
+      cursor: pointer;
+        width: 190px;
+        font-size: 30px;
         color: #fff;
         margin:15px;
     }
@@ -60,10 +85,10 @@
         display: flex;
         flex-direction: column;
         flex-wrap: wrap;
-        width: 100%;
         background-image: url(./images/main-screen__bgc.jpg) ;
-        background-size:100% ;
-        background-position: fixed;
+        background-attachment:scroll;
+        background-size:100%;
+        background-position:unset;
         background-repeat:no-repeat;
         text-align: center;
     }
@@ -105,6 +130,7 @@
     }
     .main_two{
         background-image: url(./images/bgc.jpg) ;
+        background-attachment:local;
         background-size:100% ;
         background-position: fixed;
         background-clip:border-box;
@@ -335,7 +361,7 @@
         flex-wrap: wrap;
         justify-content: center;
         width: 100%;
-        gap: 100px;
+        gap: 200px;
         height: auto;
       }
       .partner{
@@ -652,7 +678,7 @@
       .timeline {
         position: relative;
         width: 1000px;
-        height: 1000px;
+        height: 900px;
         margin:  auto;
     }
     
@@ -719,11 +745,10 @@
       margin-bottom: 10px;
   }
     .bio-button {
-      border: none;
-      background-color: #007BFF;
+      border: solid 1px;
+      border-radius: 100px / 90px;
       color: white;
       padding: 10px 20px;
-      border-radius: 5px;
       cursor: pointer;
       outline: none;
   }
@@ -737,7 +762,7 @@
       width: 280px;
       padding: 10px;
       background-color: #3f3e3ed5;
-      box-shadow: 0 2px 8px rgba(0,0,0,0.2);
+      box-shadow: 0 2px 8px rgb(0, 0, 0);
       border-radius: 5px;
       z-index: 1000;
       color: #000000;
@@ -747,11 +772,14 @@
   }
   .teachers{
     display: flex;
-    flex-direction: column;
+    flex-wrap: wrap;
     width: 1500px;
+    justify-content: center;
+    flex-direction: row;
   }
   .tabloid{
     display: flex;
+    gap: 150px;
   }
   .email-input {
     flex-grow: 0.3; /* Input занимает всё доступное пространство */

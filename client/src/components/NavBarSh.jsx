@@ -1,6 +1,7 @@
 import '../App.css';
-import { Text, Box, Flex, Grid, Input,Heading, Button } from '@chakra-ui/react';
+import { Text, Box, Flex, Grid, Input,Heading, Image } from '@chakra-ui/react';
 import { Link } from 'react-router-dom'
+import logo_header from '../images/logo_header.svg'
 import { ShopRoute, HomeRoute, RegisterRoute,AuthRoute,NewsRoute } from '../utils/consts'
 const NavBarSh = () => 
 {
@@ -17,7 +18,15 @@ const NavBarSh = () =>
             <Link
             to={HomeRoute}
             >
-                <Heading>Videockat</Heading> 
+                <Heading>
+                    <Image
+                        textAlign={'center'}
+                        src={logo_header}
+                        width={'75px'}
+                        alt='logo_header'
+                        float={'left'}
+                    />
+                </Heading> 
             </Link>
             <Link
             to={HomeRoute}

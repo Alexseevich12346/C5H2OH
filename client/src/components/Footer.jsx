@@ -1,7 +1,11 @@
 import '../App.css';
-import { Text, Box, Flex} from '@chakra-ui/react';
+import { Image, Box, Flex} from '@chakra-ui/react';
 import { Link } from 'react-router-dom';
-
+import Facebook from '../images/facebook.jpg'
+import Instagram from '../images/instagram.jpg'
+import Vk from '../images/vk.jpg'
+import Youtube from '../images/youtube.jpg'
+import { useEffect, useState } from 'react';
 
 const Footer = () => {
     return (
@@ -17,21 +21,56 @@ const Footer = () => {
         position = {'relative'}
         height={'20vh'}
         marginTop = {'auto'}
-    >
-        <Link>
-                    <Text color={'teal'}>Foreal© 2024</Text>
-                </Link>
-                <Link>
-                    <Text color={'teal'}>Privacy & Legal</Text>
-                </Link>
-                <Link>
-                    <Text color={'teal'}>News</Text>
-                </Link>
-                <Link>
-                    <Text color={'teal'}>Contacts</Text>
-                </Link>
+    >       
+        <Box>
+            <div className="follow_us">
+                <h3>FOLLOW US</h3>
+                <div className="mes">
+                    <a href="https://www.facebook.com/">
+                    <Image
+                            textAlign={'center'}
+                            src={Vk}
+                            width={'75px'}
+                            alt='Vk'
+                            float={'left'}
+                            className='mes_click'
+                    />
+                    </a>
+                    <a href="https://twitter.com/">
+                    <Image
+                            textAlign={'center'}
+                            src={Youtube}
+                            width={'75px'}
+                            alt='Youtube'
+                            float={'left'}
+                            className='mes_click'
+                    />
+                    </a>
+                    <a href="https://www.instagram.com/">
+                    <Image
+                            textAlign={'center'}
+                            src={Facebook}
+                            width={'75px'}
+                            alt='Facebook'
+                            float={'left'}
+                            className='mes_click'
+                    />
+                    </a>
+                    <a href="https://ru.wikipedia.org/wiki/RSS">
+                        <Image
+                                textAlign={'center'}
+                                src={Instagram}
+                                width={'75px'}
+                                alt='Instagram'
+                                float={'left'}
+                                className='mes_click'
+                        />
+                    </a>
+                </div>
+            </div>
+        </Box>
 
-        </Flex>
+    </Flex>
     )
 }
 export default Footer;
