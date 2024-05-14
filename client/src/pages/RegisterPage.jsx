@@ -2,7 +2,6 @@ import { Flex,Text, Input, InputGroup, Stack, InputLeftElement,Button,WrapItem  
 import NavBarSh from '../components/NavBarSh';
 import { Link } from 'react-router-dom';
 import { AuthRoute} from '../utils/consts';
-import AuthPage from './authPage';
 import { useState } from 'react';
 import { Radio, RadioGroup } from '@chakra-ui/react'
 const RegisterPage = () => {

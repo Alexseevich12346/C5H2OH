@@ -1,11 +1,9 @@
 import '../App.css';
 import { Image, Box, Flex} from '@chakra-ui/react';
-import { Link } from 'react-router-dom';
-import Facebook from '../images/facebook.jpg'
-import Instagram from '../images/instagram.jpg'
-import Vk from '../images/vk.jpg'
-import Youtube from '../images/youtube.jpg'
-import { useEffect, useState } from 'react';
+import Facebook from '../images/facebook.png'
+import Instagram from '../images/instagram.png'
+import Vk from '../images/vk.png'
+import Youtube from '../images/youtube.png'
 
 const Footer = () => {
     return (
@@ -24,9 +22,9 @@ const Footer = () => {
     >       
         <Box>
             <div className="follow_us">
-                <h3>FOLLOW US</h3>
+                <h1 style={{margin:'0'}}>Наши соцсети</h1>
                 <div className="mes">
-                    <a href="https://www.facebook.com/">
+                    <a href="https://www.vk.com/">
                     <Image
                             textAlign={'center'}
                             src={Vk}
@@ -36,7 +34,7 @@ const Footer = () => {
                             className='mes_click'
                     />
                     </a>
-                    <a href="https://twitter.com/">
+                    <a href="https://youtube.com/">
                     <Image
                             textAlign={'center'}
                             src={Youtube}
@@ -46,7 +44,7 @@ const Footer = () => {
                             className='mes_click'
                     />
                     </a>
-                    <a href="https://www.instagram.com/">
+                    <a href="https://www.facebook.com/">
                     <Image
                             textAlign={'center'}
                             src={Facebook}
@@ -56,7 +54,7 @@ const Footer = () => {
                             className='mes_click'
                     />
                     </a>
-                    <a href="https://ru.wikipedia.org/wiki/RSS">
+                    <a href="https://www.instagram.com">
                         <Image
                                 textAlign={'center'}
                                 src={Instagram}

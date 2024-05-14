@@ -11,6 +11,46 @@
         color: #fff;
         transition: all 1.2s;
     }
+    #root_rt{
+      max-width: 1280px;
+      margin: 0 auto;
+      padding: 2rem;
+      text-align: center;
+    }
+    .product--image {
+      width: 100%;
+      height: 16em;
+      object-fit: cover;
+    }
+    
+    .card {
+      box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+      max-width: 320px;
+      margin: auto 1rem;
+      text-align: center;
+      font-family: arial;
+    }
+    
+    .price {
+      color: grey;
+      font-size: 22px;
+    }
+    
+    .card button {
+      border: none;
+      outline: 0;
+      padding: 12px;
+      color: white;
+      background-color: #000;
+      text-align: center;
+      cursor: pointer;
+      width: 100%;
+      font-size: 18px;
+    }
+    
+    .card button:hover {
+      opacity: 0.7;
+    }    
     .follow_us{
       width: 1000px;
       display: flex;
@@ -25,14 +65,17 @@
       width: 500px;
       gap: 50px;
     }
+    .footer{
+      background: url(./images/bgc.jpg);
+    }
     .mes_click{
-      height: 75px;
+      height: 80px;
+      border-image:url(./images/vk.png);
       display: flex;
       margin-top:35px;
-      border-width:35px;
       border-radius: 100px / 100px;
-      border: 10px solid transparent;
-      background: linear-gradient(#3b384b, #4d31eb) padding-box,
+      border: solid 20px transparent;
+      background: padding-box,
       linear-gradient(var(--angle), #563dfc, #8363f7, #b191f8, #C89AFC) border-box;
       animation: 8s rotate linear infinite;
     }
@@ -806,5 +849,9 @@
     width: 1500px;
     height: 400px;
   }
-
-
+  .prof_doc{
+    gap: 100px;
+  }
+  .kurs_po_obuch{
+    background: rgb(19, 17, 17);
+  }

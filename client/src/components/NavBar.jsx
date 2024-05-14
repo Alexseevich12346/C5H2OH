@@ -1,14 +1,12 @@
 import '../App.css';
-import { Text, Box, Flex, Grid, Input,Heading, Image} from '@chakra-ui/react';
+import { Flex, Heading, Image} from '@chakra-ui/react';
 import { Link } from 'react-router-dom';
-import { ShopRoute, HomeRoute, RegisterRoute,AuthRoute, NewsRoute} from '../utils/consts';
+import { ShopRoute, HomeRoute,AuthRoute, NewsRoute, ContactRoute} from '../utils/consts';
 import { useRef, useEffect, useState } from 'react';
-import { useLocation } from 'react-router-dom';
 import logo_header from '../images/logo_header.svg'
 const NavBar = () => {
     const prevScrollY = useRef(0);
     const [isNavBarVisible, setIsNavBarVisible] = useState(true);
-    const location = useLocation();
      
     useEffect(() => {
         const scroll = () =>{
@@ -82,6 +80,11 @@ const NavBar = () => {
                 <Link to={NewsRoute}>
                 <button className='headerBtn'>
                     News
+                </button>
+                </Link>
+                <Link to={ContactRoute}>
+                <button className='headerBtn'>
+                    Contact
                 </button>
                 </Link>
             </Flex>

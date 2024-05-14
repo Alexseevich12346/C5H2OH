@@ -2,7 +2,6 @@ import { Flex,Text, Input, InputGroup, Stack, InputLeftElement,Button,WrapItem  
 import NavBarSh from '../components/NavBarSh';
 import { Link } from 'react-router-dom';
 import { RegisterRoute } from '../utils/consts';
-import RegisterPage from './RegisterPage';
 import { useState } from 'react';
 
 const AuthPage = () => {

@@ -1,8 +1,8 @@
 import '../App.css';
-import { Text, Box, Flex, Grid, Input,Heading, Image } from '@chakra-ui/react';
+import { Flex,Heading, Image } from '@chakra-ui/react';
 import { Link } from 'react-router-dom'
 import logo_header from '../images/logo_header.svg'
-import { ShopRoute, HomeRoute, RegisterRoute,AuthRoute,NewsRoute } from '../utils/consts'
+import { HomeRoute} from '../utils/consts'
 const NavBarSh = () => 
 {
     return (

@@ -16,15 +16,6 @@ const ShopPage = () =>{
         gap={'35px'}
         mt={'50px'}
     >
-        <CardItem/>
-        <CardItem/>
-        <CardItem/>
-        <CardItem/>
-        <CardItem/>
-        <CardItem/>
-        <CardItem/>
-        <CardItem/>
-        <CardItem/>
     </Flex>
     </Flex>
    

@@ -1,5 +1,5 @@
 import '../App.css'; 
-import { Box,Link } from '@chakra-ui/react';
+import {Link } from '@chakra-ui/react';
 import NavBar from '../components/NavBar';
 import Vot from '../images/pc.png'
 import  Footer  from '../components/Footer'
@@ -8,10 +8,8 @@ import Countdown from '../countdown';
 import IconOne from '../images/icon-1.jpg'
 import IconTwo from '../images/icon-2.jpg'
 import IconThree from '../images/icon-3.jpg'
-import Logo from '../images/logo.png'
 import { useEffect, useState } from 'react';
 import Loader from '../components/Loader'
-import Carousel from '../components/Carousel'
 import TeacherOne from '../images/teacher-1.jpg'
 import TeacherTwo from '../images/teacher-2.jpg'
 import TeacherThree from '../images/teacher-3.jpg'
@@ -74,7 +72,7 @@ const HomePage = () =>{
                                 <Image                    
                                     textAlign={'center'}
                                     src={Vot}
-                                    width={'300px'}
+                                    width={'400px'}
                                     alt='TheHost_IP-KVM'
                                     float={'left'}
                                 >
@@ -95,7 +93,7 @@ const HomePage = () =>{
                             </div>
                             <div className="procent">
                                 <div className="pro">
-                                    <div className="num">1%</div>
+                                    <div className="num">0%</div>
                                     <div className="border_o"></div>
                                     <div className="txt">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dolorem necessitatibus ea debitis, architecto accusamus quas a! Id culpa ullam, natus labore voluptate fugit odio rem ducimus reprehenderit, ipsam, qui quisquam.</div>
                                 </div>

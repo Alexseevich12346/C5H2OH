@@ -1,5 +1,5 @@
 import '../App.css';
-import { Card, CardHeader, CardBody, CardFooter, Image, Text, Heading, Box, Button } from '@chakra-ui/react';
+import { Card, CardBody, Image, Text, Heading, Box, Button } from '@chakra-ui/react';
 import TheHost_IP from '../images/видюха.png'
 
 const CardItem = () =>{
