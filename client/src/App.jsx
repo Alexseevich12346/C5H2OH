@@ -1,7 +1,7 @@
 import './App.css';
 import { BrowserRouter } from 'react-router-dom';
 import Carousel from "react-multi-carousel";
-import Product from "./Product";
+import Product from "../src/components/Product";
 import { productData, responsive } from "./data";
 import AppRouter from './components/AppRouter'
 
@@ -17,12 +17,12 @@ function App() {
 
   return (
     <BrowserRouter>
-         <div className="App">
+         {/* <div className="App">
           <h1 style={{    h1:{margin: '1rem auto 4rem'  }}}>React multi carousel</h1>
             <Carousel showDots={true} responsive={responsive}>
               {product}
             </Carousel>
-      </div>
+      </div> */}
       <AppRouter/>
     </BrowserRouter>
   )

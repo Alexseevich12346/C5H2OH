@@ -164,25 +164,25 @@ const HomePage = () =>{
                                 <div class="image-container" style={{image: "./src/images/logo.png",borderc:" black"}}>
                                     <div class="placeholder"></div>
                                 </div>
-                                <div class="image-container" style={{image: "./src/images/logo.png",borderc:" black"}}>
+                                <div class="image-container" id='asrock' style={{image: "./src/images/asrock.png",borderc:" black"}}>
                                     <div class="placeholder"></div>
                                 </div>
-                                <div class="image-container" style={{image: "./src/images/logo.png",borderc:" black"}}>
+                                <div class="image-container" id='be_quite' style={{image: "./src/images/be_quite.png",borderc:" black"}}>
                                     <div class="placeholder"></div>
                                 </div>
-                                <div class="image-container" style={{image: "./src/images/logo.png",borderc:" black"}}>
+                                <div class="image-container" id='AMD' style={{image: "./src/images/AMD.jpg",borderc:" black"}}>
                                     <div class="placeholder"></div>
                                 </div>
-                                <div class="image-container" style={{image: "./src/images/logo.png",borderc:" black"}}>
+                                <div class="image-container" id='intel' style={{image: "./src/images/intel.png",borderc:" black"}}>
                                     <div class="placeholder"></div>
                                 </div>
-                                <div class="image-container" style={{image: "./src/images/logo.png",borderc:" black"}}>
+                                <div class="image-container" id='nvidia' style={{image: "./src/images/nvidia.svg",borderc:" black"}}>
                                     <div class="placeholder"></div>
                                 </div>
-                                <div class="image-container" style={{image: "./src/images/logo.png",borderc:" black"}}>
+                                <div class="image-container" id='RoG' style={{image: "./src/images/RoG.jpg",borderc:" black"}}>
                                     <div class="placeholder"></div>
                                 </div>
-                                <div class="image-container" style={{image: "./src/images/logo.png",borderc:" black"}}>
+                                <div class="image-container" id='' style={{image: "./src/images/samsung.png",borderc:" black"}}>
                                     <div class="placeholder"></div>
                                 </div>
                             </div>
