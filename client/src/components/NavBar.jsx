@@ -92,10 +92,10 @@ const NavBar = () => {
             <Link  to={AuthRoute}>
                 <button className='header_btn'>Login</button>
             </Link>
-                <Link>
+                {/* <Link>
                     <button className='header_btn'>Basket</button>
                 </Link>
-            
+             */}
             </Flex>
         </Flex>
         )
