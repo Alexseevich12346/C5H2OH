@@ -12,7 +12,7 @@ const AuthPage = () => {
         setTypePass(!typePass);
     }
     const { store } = useContext;
-    const [email, setError] = useContext(Context);
+    const [email, setEmail] = useContext('');
     const [password, setPassword] = useState('');
     const handlelogin = async(email,password)=>{
         try{
