@@ -12,7 +12,8 @@ import { useEffect, useState } from 'react';
 import Loader from '../components/Loader'
 import TeacherOne from '../images/teacher-1.jpg'
 import TeacherTwo from '../images/teacher-2.jpg'
-import TeacherThree from '../images/teacher-3.jpg'
+import TeacherThree from '../images/teacher-3.jpg';
+import {observer} from 'mobx-react-lite';
 
 
 const HomePage = () =>{
@@ -292,4 +293,4 @@ const HomePage = () =>{
         </>
     )
 }
-export default HomePage;
+export default observer(HomePage);

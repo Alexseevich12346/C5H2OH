@@ -3,12 +3,30 @@ import NavBarSh from '../components/NavBarSh';
 import { Link } from 'react-router-dom';
 import { RegisterRoute } from '../utils/consts';
 import { useState } from 'react';
+import {Context} from '../index';
+import { useContext } from 'react';
 
 const AuthPage = () => {
-    const [typePass, setTypePass] = useState(false)
+    const [typePass, setTypePass] = useState(false);
     const eyeClick =()=>{
         setTypePass(!typePass);
     }
+    const { store } = useContext;
+    const [email, setError] = useContext(Context);
+    const [password, setPassword] = useState('');
+    const handlelogin = async(email,password)=>{
+        try{
+            await store.login(email,password);
+            if(store.isAuth){
+                alert('Вы русский')
+            } else{
+                store.setError('Incorrect loginor pass. Try again!')
+                alert("Error")
+            }
+        }catch (e){
+                console.log('An error ocured during login')
+        }
+    };
     return (
         <Flex className='flex_ayth_regist'
             width={'100%'}
@@ -39,9 +57,15 @@ const AuthPage = () => {
                         </svg>
                         </InputLeftElement>
                         
-                        <Input type='tel' placeholder='Login'/>
+                        <Input 
+                            type='text'
+                            placeholder='Login'
+                            onChange = {e=> setEmail(e.target.value)}
+                            value={email}
+                        />
                         
                     </InputGroup>
+
                     <InputGroup>
                         <InputLeftElement
                         pointerEvents='none'
@@ -66,12 +90,19 @@ const AuthPage = () => {
                             </Link>
     
                             
-                            <Input type={typePass ? "text" : "password"} pl={'40px'} width={'250px'} placeholder='Password'/>
+                            <Input type={typePass ? "text" : "password"} pl={'40px'} width={'250px'} placeholder='Password'
+                                              onChange={e=> setEmail(e.target.value)}
+                                              value={email}
+                            />
                         </div>
                         
                     </InputGroup>
                     <WrapItem>
-                        <Button colorScheme='whatsapp' w={'250px'} textAlign={'center'}>Login</Button>
+                        <Button colorScheme='whatsapp' w={'250px'} textAlign={'center'}
+
+                        >
+                            Login
+                        </Button>
                     </WrapItem>
                     </Stack>
                     <Text mr={'5px'}  textAlign={'center'}> Do you have an account? <Text color={'teal'}><Link to ={RegisterRoute}>Register</Link></Text></Text>
