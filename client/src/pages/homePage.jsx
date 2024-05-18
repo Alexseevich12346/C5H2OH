@@ -276,7 +276,7 @@ const HomePage = () =>{
                                     className="email-input"
                                 />
                                 <button onClick={handleSubmit} className="submit-button">
-                                    Отправить
+                                    Подписаться
                                 </button>
                             </div>
                         </div>

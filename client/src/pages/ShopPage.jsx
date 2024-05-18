@@ -4,7 +4,8 @@ import CardItem from '../components/cardItem';
 import NavBar from '../components/NavBar';
 import EmblaCarousel from '../components/Carousel/CarouselEmbla';
 import { Box } from '@chakra-ui/react';
-import ItemPage from '../images/pc.png'; 
+import ItemPage from '../images/pc.png';
+import Carousel from '../components/Carousel';
 
 
 
@@ -27,10 +28,13 @@ const ShopPage = () =>{
           gap={'35px'}
           mt={'50px'}
       > */}
-        <Flex mt='50px'>
+        <Flex mt='50px' w='100%'>
           <EmblaCarousel slides={SLIDES} options={OPTIONS} />
         </Flex>
       {/* </Flex> */}
+        <Flex>
+          { <Carousel/> }
+        </Flex>
     </Flex>
    
   );

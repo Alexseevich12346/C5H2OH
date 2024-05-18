@@ -1,4 +1,4 @@
-iimport axios from 'axios';
+import axios from 'axios';
 import { LOCAL_API_URL } from '../utils/consts';
 
 const baseURL = LOCAL_API_URL;
