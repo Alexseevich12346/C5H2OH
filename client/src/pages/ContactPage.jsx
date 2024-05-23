@@ -21,12 +21,10 @@ const ContactPage = () => {
                     width={'90%'}
                     height={'100%'}
                     mt={'100px'}
- 
                 >
-                    <Text fontSize={'30px'} color={'teal'}>Please Contacts Us</Text>
+                    <Text fontSize={'30px'}>Please Contacts Us</Text>
  
                     <Flex
- 
                         display={'flex'}
                         alignItems={'stretch'}
                         width={'100%'}
@@ -37,73 +35,73 @@ const ContactPage = () => {
                         marginTop={'auto'}
                         justify={'center'}
                     >
-                        <Box >
+                        <Box>
                             <Link>
-                                <Text color={'teal'}>VISIT THE SHOP IN PERSON</Text>
+                                <Text>VISIT THE SHOP IN PERSON</Text>
                             </Link>
                             <Link>
-                                <Text color={'teal'}>DiveLife</Text>
+                                <Text>DiveLife</Text>
                             </Link>
                             <Link>
-                                <Text color={'teal'}>StonePale Buildings</Text>
+                                <Text>StonePale Buildings</Text>
                             </Link>
                             <Link>
-                                <Text color={'teal'}>Victoria Lane</Text>
+                                <Text>Victoria Lane</Text>
                             </Link>
                             <Link>
-                                <Text color={'teal'}>Whitefield, M45 6BL</Text>
+                                <Text>Whitefield, M45 6BL</Text>
                             </Link>
                             <Link>
-                                <Text color={'teal'}>Manchester</Text>
+                                <Text>Manchester</Text>
                             </Link>
                             <Link>
-                                <Text color={'teal'}>0161 796 0300</Text>
+                                <Text>0161 796 0300</Text>
                             </Link>
                             <Link>
-                                <Text color={'teal'}>We have a large car park at the rear of the building, simply drive past the shop, and turn left through the green double gates. Please let us know if you want to come in person.</Text>
+                                <Text>We have a large car park at the rear of the building, simply drive past the shop, and turn left through the green double gates. Please let us know if you want to come in person.</Text>
                             </Link>
                         </Box>
  
                         <Box paddingLeft={'30px'}>
                             <Link>
-                                <Text color={'teal'}>OPENING TIMES</Text>
+                                <Text>OPENING TIMES</Text>
                             </Link>
                             <Link>
-                                <Text color={'teal'}>The Warehouse is open :</Text>
+                                <Text>The Warehouse is open :</Text>
                             </Link>
                             <Link>
-                                <Text color={'teal'}>Monday:          9.00 - 17.30</Text>
+                                <Text>Monday:          9.00 - 17.30</Text>
                             </Link>
                             <Link>
-                                <Text color={'teal'}>Tuesday:           9.00 - 17.30</Text>
+                                <Text>Tuesday:           9.00 - 17.30</Text>
                             </Link>
                             <Link>
-                                <Text color={'teal'}>Wednesday:      9.00 - 17.30</Text>
+                                <Text>Wednesday:      9.00 - 17.30</Text>
                             </Link>
                             <Link>
-                                <Text color={'teal'}>Thursday:         9.00 - 17.30</Text>
+                                <Text>Thursday:         9.00 - 17.30</Text>
                             </Link>
                             <Link>
-                                <Text color={'teal'}>Friday:              9.00 - 17.30</Text>
+                                <Text>Friday:              9.00 - 17.30</Text>
                             </Link>
                             <Link>
-                                <Text color={'teal'}>Saturday:          - </Text>
+                                <Text>Saturday:          - </Text>
                             </Link>
                             <Link>
-                                <Text color={'teal'}>Sunday:            - </Text>
+                                <Text>Sunday:            - </Text>
                             </Link>
                             <Link>
-                                <Text color={'teal'}>Visits outside these hours possible by appointment only.</Text>
+                                <Text>Visits outside these hours possible by appointment only.</Text>
                             </Link>
                         </Box>
  
  
                         <Box paddingLeft={'40px'}>
                             <Link>
-                                <Text color={'teal'}>EXPLORE US ONLINE</Text>
+                                <Text>EXPLORE US ONLINE</Text>
                             </Link>
                             <Link>
-                                <Text color={'teal'}>Contact us via the phone on our warehouse open days or via the contact form.</Text>
+                                <Text>Contact us via the phone on our warehouse open days or via the contact form.</Text>
                             </Link>
                         </Box>
                     </Flex>
@@ -115,22 +113,22 @@ const ContactPage = () => {
                         width={'100%'}
                         mt={'175px'}
                     >
-                        <Flex justify={'center'} width={'800px'}>
+                        <Flex justify={'center'} width={'1000px'}>
                         <Flex flexWrap={'wrap'} width={'80%'} spacing={4}>
                                 <Flex width={'90%'} justify={'space-between'}>
-                                    <Text width={'15%'} color={'teal'}>Email</Text>
+                                    <Text width={'15%'}>Email</Text>
                                     <Input width={'100%'} type='tel' placeholder='Enter your mail' />
                                 </Flex>
                                 <Flex width={'90%'} justify={'space-between'}>
-                                    <Text width={'15%'} color={'teal'}>Order</Text>
+                                    <Text width={'15%'}>Order</Text>
                                     <Input width={'100%'} placeholder='Enter your number' />
                                 </Flex>
                                 <Flex width={'90%'} justify={'space-between'}>
-                                    <Text width={'15%'} color={'teal'}>Name</Text>
+                                    <Text width={'15%'}>Name</Text>
                                     <Input width={'100%'} type='tel' placeholder='Enter your full name' />
                                 </Flex>
                                 <Flex width={'90%'} justify={'space-between'}>
-                                    <Text width={'15%'} color={'teal'}>Message</Text>
+                                    <Text width={'15%'}>Message</Text>
                                     <Input width={'100%'} placeholder='Enter your massage' />
                                 </Flex>
                         </Flex>
