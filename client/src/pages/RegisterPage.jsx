@@ -2,9 +2,30 @@ import { Flex,Text, Input, InputGroup, Stack, InputLeftElement,Button,WrapItem  
 import NavBarSh from '../components/NavBarSh';
 import { Link } from 'react-router-dom';
 import { AuthRoute} from '../utils/consts';
+import {Context} from '../index';
 import { useState } from 'react';
-import { Radio, RadioGroup } from '@chakra-ui/react'
+import { useContext } from 'react';
+import { Radio, RadioGroup } from '@chakra-ui/react'; 
+import {useNavigate} from 'react-router-dom';
+import { HomeRoute } from '../utils/consts';
 const RegisterPage = () => {
+    const { store } = useContext(Context);
+    const [email, setEmail] = useState('');
+    const [password, setPassword] = useState('');
+    const navigate = useNavigate();
+    const handleRegister = async(email,password)=>{
+        try{
+            await store.registration(email,password);
+            if(store.isAuth){
+                navigate(HomeRoute)
+            } else{
+                store.setError('Incorrect loginor pass. Try again!')
+                alert("Error")
+            }
+        }catch (e){
+                console.log('An error ocured during login')
+        }
+    };
     const [typePass, setTypePass] = useState(false)
     const eyeClick =()=>{
         setTypePass(!typePass);
@@ -32,7 +53,7 @@ const RegisterPage = () => {
                 >
                     <Text mt={'7%'} fontSize={'50px'} fontWeight={'bold'} textAlign={'center'} w={'100%'} color={'white'}> Sign up</Text>
                     <Stack spacing={4}>
-                    <InputGroup>
+                    {/* <InputGroup>
                         <InputLeftElement pointerEvents='none' width={'25px'} top={'0px'} left={'10px'}>
                         <svg xmlns="http://www.w3.org/2000/svg" width="200" height="200" viewBox="0 0 256 256">
                             <path fill="currentColor" d="M230.92 212c-15.23-26.33-38.7-45.21-66.09-54.16a72 72 0 1 0-73.66 0c-27.39 8.94-50.86 27.82-66.09 54.16a8 8 0 1 0 13.85 8c18.84-32.56 52.14-52 89.07-52s70.23 19.44 89.07 52a8 8 0 1 0 13.85-8ZM72 96a56 56 0 1 1 56 56a56.06 56.06 0 0 1-56-56Z"/>
@@ -41,7 +62,7 @@ const RegisterPage = () => {
                         
                         <Input type='tel' placeholder='Login'/>
                         
-                    </InputGroup>
+                    </InputGroup> */}
                     <RadioGroup defaultValue='4'>
                     <Flex
                         fontSize={'50px'}
@@ -63,7 +84,9 @@ const RegisterPage = () => {
                         </svg>
                         </InputLeftElement>
                         
-                        <Input type='tel' placeholder='Email'/>
+                        <Input type='tel' placeholder='Email'
+                                onChange={e=> setEmail(e.target.value)}
+                                value={email}/>
                         
                     </InputGroup>
 
@@ -91,11 +114,15 @@ const RegisterPage = () => {
                             </Link>
     
                             
-                            <Input type={typePass ? "text" : "password"} pl={'40px'} width={'250px'} placeholder='Password'/>
+                            <Input pl={'40px'} width={'250px'} placeholder='Password' //type={typePass ? "text" : "password"}
+                                onChange={e=> setPassword(e.target.value)}
+                                value={password}/>
                         </div>
                     </InputGroup>
                     <WrapItem>
-                        <Button colorScheme='whatsapp' w={'250px'} textAlign={'center'}>Login</Button>
+                        <Button  colorScheme='whatsapp' w={'250px'} textAlign={'center'}
+                            onClick={()=> handleRegister(email, password)}
+                        >Registor</Button>
                     </WrapItem>
                     </Stack>
                     <Text mr={'5px'} textAlign={'center'}> Do you have an account? <Text color={'teal'}><Link to ={AuthRoute}>Login</Link></Text></Text>

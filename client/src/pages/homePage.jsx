@@ -14,9 +14,12 @@ import TeacherOne from '../images/teacher-1.jpg'
 import TeacherTwo from '../images/teacher-2.jpg'
 import TeacherThree from '../images/teacher-3.jpg';
 import {observer} from 'mobx-react-lite';
+import { Context } from '../index';
+import { useContext } from 'react';
 
 
 const HomePage = () =>{
+    const {store} = useContext(Context);
     const [isLoading,setIsLoading] = useState(true);
     const [email, setEmail] = useState('');
 
@@ -28,12 +31,14 @@ const HomePage = () =>{
         alert(`Email: ${email}`);
     };
     useEffect(() => {
-        const fetchData = async () => {
-            await new Promise(resolve => setTimeout(resolve,5000));
+        const checkAuth = async () =>{
+            if(localStorage.getItem('token')){
+                await store.checkAuth();
+            }
             setIsLoading(false)
         }
-        fetchData();
-    }, [])
+        checkAuth();
+    }, [store])
     return(
         <> 
             {isLoading ? (

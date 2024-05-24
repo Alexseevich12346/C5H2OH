@@ -2,6 +2,7 @@ import React from 'react';
 import useEmblaCarousel from 'embla-carousel-react';
 import { PrevButton, NextButton, usePrevNextButtons } from './EmblaArrowButtons';
 import styles from './EmblaCarousel.module.css';
+import { slideFadeConfig } from '@chakra-ui/react';
 
 const EmblaCarousel = (props) => {
   const { slides, options } = props;
@@ -20,6 +21,13 @@ const EmblaCarousel = (props) => {
           {slides.map((slide, index) => (
             <div className={styles.embla__slide} key={index}>
               {slide} 
+            </div>
+          ))}
+        </div>
+        <div className={styles.embla__container}>
+          {slides.map((slide, index) => (
+            <div className={styles.embla__slide} key={index}>
+              <img src="" alt="" />
             </div>
           ))}
         </div>

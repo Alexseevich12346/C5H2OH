@@ -1,12 +1,16 @@
 import '../App.css';
-import { Flex, Heading, Image} from '@chakra-ui/react';
+import { Flex, Heading, Image, flexbox} from '@chakra-ui/react';
 import { Link } from 'react-router-dom';
 import { ShopRoute, HomeRoute,AuthRoute, NewsRoute, ContactRoute} from '../utils/consts';
 import { useRef, useEffect, useState } from 'react';
-import logo_header from '../images/logo_header.svg'
+import logo_header from '../images/logo_header.svg';
+import {Context} from '../index';
+import { useContext } from 'react';
+import { observer } from 'mobx-react-lite';
 const NavBar = () => {
     const prevScrollY = useRef(0);
     const [isNavBarVisible, setIsNavBarVisible] = useState(true);
+    const {store} = useContext(Context)
      
     useEffect(() => {
         const scroll = () =>{
@@ -89,9 +93,16 @@ const NavBar = () => {
                 </Link>
             </Flex>
             <Flex>
-            <Link  to={AuthRoute}>
-                <button className='header_btn'>Login</button>
-            </Link>
+                {store.isAuth ? (
+                <Flex gap={3}>
+                    <div>Hello</div>              
+                    <button  onClick={() =>store.logout}>Exit</button>       
+                </Flex>
+                                ) :(
+                    <Link  to={AuthRoute}>
+                        <button className='header_btn'>Login</button>
+                    </Link>
+                )}
                 {/* <Link>
                     <button className='header_btn'>Basket</button>
                 </Link>
@@ -101,4 +112,4 @@ const NavBar = () => {
         )
 }
 
-export default NavBar;
+export default observer(NavBar);
