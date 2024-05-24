@@ -17,15 +17,9 @@ function App() {
 
   return (
     <BrowserRouter>
-         {/* <div className="App">
-          <h1 style={{    h1:{margin: '1rem auto 4rem'  }}}>React multi carousel</h1>
-            <Carousel showDots={true} responsive={responsive}>
-              {product}
-            </Carousel>
-      </div> */}
       <AppRouter/>
     </BrowserRouter>
   )
 }
 
-export default App;
+export default observer(App);

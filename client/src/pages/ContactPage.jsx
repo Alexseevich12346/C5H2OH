@@ -111,7 +111,7 @@ const ContactPage = () => {
                         alignItems={'center'}
                         height={'300px'}
                         width={'100%'}
-                        mt={'175px'}
+                        mt={'275px'}
                     >
                         <Flex justify={'center'} width={'1000px'}>
                         <Flex flexWrap={'wrap'} width={'80%'} spacing={4}>

@@ -11,8 +11,8 @@ const AuthPage = () => {
     const eyeClick =()=>{
         setTypePass(!typePass);
     }
-    const { store } = useContext;
-    const [email, setEmail] = useContext('');
+    const { store } = useContext(Context);
+    const [email, setEmail] = useState('');
     const [password, setPassword] = useState('');
     const handlelogin = async(email,password)=>{
         try{
@@ -59,7 +59,7 @@ const AuthPage = () => {
                         
                         <Input 
                             type='text'
-                            placeholder='Login'
+                            placeholder='Email'
                             onChange = {e=> setEmail(e.target.value)}
                             value={email}
                         />
@@ -91,15 +91,15 @@ const AuthPage = () => {
     
                             
                             <Input type={typePass ? "text" : "password"} pl={'40px'} width={'250px'} placeholder='Password'
-                                              onChange={e=> setEmail(e.target.value)}
-                                              value={email}
+                                onChange={e=> setPassword(e.target.value)}
+                                value={password}
                             />
                         </div>
                         
                     </InputGroup>
                     <WrapItem>
                         <Button colorScheme='whatsapp' w={'250px'} textAlign={'center'}
-
+                            onClick={() => handlelogin(email, password)}
                         >
                             Login
                         </Button>
